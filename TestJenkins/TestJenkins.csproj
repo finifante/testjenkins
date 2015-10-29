@@ -177,6 +177,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-TestJenkins-20151029015355.mdf" />
+    <Content Include="App_Data\aspnet-TestJenkins-20151029015355_log.ldf">
+      <DependentUpon>aspnet-TestJenkins-20151029015355.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
@@ -189,6 +193,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Test.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -236,6 +241,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Web.Production.config" />
+    <None Include="Web.Test.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201510291211486_f1.resx">
