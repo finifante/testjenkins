@@ -10,6 +10,7 @@ namespace TestJenkins.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.test = 1;
             return View();
         }
 
